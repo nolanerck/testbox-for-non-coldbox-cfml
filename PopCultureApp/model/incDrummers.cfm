@@ -34,6 +34,11 @@
 	<cfset var qrySaveDrummer = "" />
 	<cfset var qryDrummerDetails = "" />
 
+	<!--- default any negative entries for experience to 0 --->
+<!---	<cfif arguments.yearsExp lt 0>
+		<cfset arguments.yearsExp = 0 />
+	</cfif> --->
+
 	<cfquery name="qrySaveDrummer" datasource="#application.dsn#">
 		UPDATE tblDrummers
 		   SET name = <cfqueryparam cfsqltype="cf_sql_varchar" value="#arguments.drummerName#" />,
