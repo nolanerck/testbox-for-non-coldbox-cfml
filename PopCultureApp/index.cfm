@@ -1,6 +1,6 @@
 <cf_HeaderAndFooter>
 
-	<p>Welcome to Pop Culture App 1.0!</p>
+	<h1>Welcome to Pop Culture App 1.0!</h1>
 	
 
 </cf_HeaderAndFooter>
