@@ -22,6 +22,7 @@
 	              		<li class="active"><a href="./index.cfm">Home</a></li>
 						<li><a href="./listMovies.cfm">Movies</a></li>
 						<li><a href="./listDrummers.cfm">Drummers</a></li>
+						<li><a href="./listNewWaveBands.cfm">New Wave Bands</a></li>
 					</ul>
 				</div><!--/.nav-collapse -->
 			</div><!--/.container-fluid -->
