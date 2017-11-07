@@ -33,6 +33,12 @@
 	<cfset var qrySaveMovie = "" />
 	<cfset var qryMovieDetails = "" />
 
+	<!--- Make sure Rating is one of the valid entries. Default invalid entries to "PG" --->
+<!---	<cfset var lstValidRatings = "G,PG,PG-13,R" />
+	<cfif not ListFind( lstValidRatings, arguments.rating )>
+		<cfset arguments.rating = "PG" />
+	</cfif> --->
+
 	<cfquery name="qrySaveMovie" datasource="#application.dsn#">
 		UPDATE tblMovies
 		   SET Title = <cfqueryparam cfsqltype="cf_sql_varchar" value="#arguments.Title#" />,

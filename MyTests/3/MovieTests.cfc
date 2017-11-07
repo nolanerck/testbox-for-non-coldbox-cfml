@@ -7,18 +7,26 @@ component displayName="Movie Tests - xUnit style" extends="testbox.system.BaseSp
 		include "/PopCultureApp/model/incMovies.cfm";
 	}
 
-    function testNoEmptyMovieTitles() 
+    function testUpdatingMovieDBEntries() 
     {
-    	Writeoutput( "movie titles..." );
-    	//include "/PopCultureApp/model/incMovies.cfm";
-    	
     	var qryNewMovie = saveMovie( 2, "Test Movie", "R" );
 
     	$assert.isTrue( ( qryNewMovie.MovieID eq 2 ) );
+    	$assert.isTrue( ( qryNewMovie.Title eq "Test Movie" ) );
+    	$assert.isTrue( ( qryNewMovie.Rating eq "R" ) );
+    }
+
+    function testOnlyValidRatingsGetUsed()
+    {
+    	var qryNewMovie = saveMovie( 2, "Pink Panther", "FF" );
+
+    	// if my validation is working, this invalid rating
+    	// will get defaulted to 'PG'
+    	$assert.isTrue( ( qryNewMovie.rating eq "PG" ) );
     }
 
 	function teardown( currentMethod ) 
 	{
-		WriteOutput( "after after!" );
+		saveMovie( 2, "Sneakers", "PG-13" );
 	}
 }
