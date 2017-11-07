@@ -8,7 +8,7 @@
 
 		<ol>
 			<cfloop query="qryDrummers">
-				<li><a href="drummerDetails.cfm?DrummerID=#qryDrummers.DrummerID#">#qryDrummers.name#</a></li>
+				<li><a href="./drummerDetails.cfm?DrummerID=#qryDrummers.DrummerID#">#qryDrummers.name#</a></li>
 			</cfloop>
 		</ol>
 	</cf_HeaderAndFooter>
