@@ -1,0 +1,4 @@
+11-06 20:19:08 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TBLMOVIES" not found; SQL statement:
+SELECT *
+		FROM tblMovies [42102-172]
