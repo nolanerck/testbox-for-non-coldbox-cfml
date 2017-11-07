@@ -6,7 +6,9 @@
 	<cf_HeaderAndFooter>
 		<h2>Drummer Details</h2>
 
-		<form name="frmDetails" id="frmDetails" method="post" action="">
+		<form name="frmDetails" id="frmDetails" method="post" action="saveDrummer.cfm">
+
+			<input type="hidden" name="DrummerID" id="DrummerID" value="#qryDetails.DrummerID#" />
 
 			<div class="row">
 				<div class="col-md-4 col-lg-4">

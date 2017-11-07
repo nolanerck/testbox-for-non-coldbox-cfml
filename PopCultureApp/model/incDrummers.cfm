@@ -27,9 +27,26 @@
 </cffunction>
 
 <cffunction name="saveDrummer" returntype="query">
-	<cfargument name="newDrummerName" type="string" required="true" />
+	<cfargument name="DrummerID" type="numeric" required="true" />
+	<cfargument name="drummerName" type="string" required="true" />
+	<cfargument name="yearsExp" type="numeric" required="true" />
 
-	<!--- CFQuery to do Insert/Update goes here. --->
+	<cfset var qrySaveDrummer = "" />
+	<cfset var qryDrummerDetails = "" />
+
+	<cfquery name="qrySaveDrummer" datasource="#application.dsn#">
+		UPDATE tblDrummers
+		   SET name = <cfqueryparam cfsqltype="cf_sql_varchar" value="#arguments.drummerName#" />,
+		       YearsExperience = <cfqueryparam cfsqltype="cf_sql_integer" value="#arguments.yearsExp#" />
+		WHERE DrummerID = <cfqueryparam cfsqltype="cf_sql_integer" value="#arguments.DrummerID#" />
+	</cfquery>
 
 	<!--- return the newly created record with a valid, unique, Primary key --->
+	<cfquery name="qryDrummerDetails" datasource="#application.dsn#">
+		SELECT *
+		FROM tblDrummers
+		WHERE DrummerID = <cfqueryparam cfsqltype="cf_sql_integer" value="#arguments.DrummerID#" />
+	</cfquery>
+
+	<cfreturn qryDrummerDetails />
 </cffunction>
