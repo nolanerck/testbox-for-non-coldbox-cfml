@@ -2,13 +2,20 @@
 	  For simplicity, this demo is just using a hand-crafted query.
 	  The rest of the code can't really tell the difference. --->
 <cffunction name="getAllDrummers" returntype="query">
-	<cfset var qryDrummers = QueryNew( "DrummerID,Name" ) />
+	<cfset var qryGetDrummers = "" />
 
-	<cfset queryAddRow( qryDrummers, { "DrummerID"=1, "Name"="Alex Van Halen" } ) />
-	<cfset queryAddRow( qryDrummers, { "DrummerID"=2, "Name"="Ringo Starr" } ) />
-	<cfset queryAddRow( qryDrummers, { "DrummerID"=3, "Name"="Buddy Rich" } ) />
-	<cfset queryAddRow( qryDrummers, { "DrummerID"=4, "Name"="Tim Alexander" } ) />
-	<cfset queryAddRow( qryDrummers, { "DrummerID"=5, "Name"="Chad Smith" } ) />
+	<cfquery name="qryGetDrummers" datasource="#application.dsn#">
+		SELECT *
+		FROM tblDrummers
+	</cfquery>
 
-	<cfreturn qryDrummers />
+	<cfreturn qryGetDrummers />
+</cffunction>
+
+<cffunction name="saveDrummer" returntype="query">
+	<cfargument name="newDrummerName" type="string" required="true" />
+
+	<!--- CFQuery to do Insert/Update goes here. --->
+
+	<!--- return the newly created record with a valid, unique, Primary key --->
 </cffunction>
