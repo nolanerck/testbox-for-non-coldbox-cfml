@@ -9,13 +9,13 @@
 <cfquery datasource="#application.dsn#">
   DROP TABLE IF EXISTS tblDrummers;
 
-  CREATE TABLE IF NOT EXISTS tblDrummers (DrummerID INT PRIMARY KEY, NAME VARCHAR(32) );
+  CREATE TABLE IF NOT EXISTS tblDrummers (DrummerID INT PRIMARY KEY, NAME VARCHAR(32), YearsExperience INT );
 
-  INSERT INTO tblDrummers( DrummerID, NAME ) VALUES( 1, 'Alex Van Halen' );
-  INSERT INTO tblDrummers( DrummerID, NAME ) VALUES( 2, 'Ringo Starr' );
-  INSERT INTO tblDrummers( DrummerID, NAME ) VALUES( 3, 'Buddy Rich' );
-  INSERT INTO tblDrummers( DrummerID, NAME ) VALUES( 4, 'Tim Alexander' );
-  INSERT INTO tblDrummers( DrummerID, NAME ) VALUES( 5, 'Chad Smith' );
+  INSERT INTO tblDrummers( DrummerID, NAME, YearsExperience ) VALUES( 1, 'Alex Van Halen', 10 );
+  INSERT INTO tblDrummers( DrummerID, NAME, YearsExperience ) VALUES( 2, 'Ringo Starr', 35 );
+  INSERT INTO tblDrummers( DrummerID, NAME, YearsExperience ) VALUES( 3, 'Buddy Rich', 50 );
+  INSERT INTO tblDrummers( DrummerID, NAME, YearsExperience ) VALUES( 4, 'Tim Alexander', 22 );
+  INSERT INTO tblDrummers( DrummerID, NAME, YearsExperience ) VALUES( 5, 'Chad Smith', 21 );
 </cfquery>
 
 <cfquery datasource="#application.dsn#" name="getDrummers">
