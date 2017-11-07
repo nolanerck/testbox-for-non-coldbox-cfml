@@ -8,12 +8,21 @@
 
 		<form name="frmDetails" id="frmDetails" method="post" action="">
 
-			<div class="form-group">
-		    	<label for="name">Name:</label>
-		    	<input type="text" class="form-control" id="name" value="#qryDetails.name#" />
-		  	</div>
+			<div class="row">
+				<div class="col-md-4 col-lg-4">
+					<div class="form-group">
+				    	<label for="name">Name:</label>
+				    	<input type="text" class="form-control" id="name" name="name" value="#qryDetails.name#" />
+				  	</div>
 
-		  	<button type="submit" class="btn btn-default">Save Drummer</button>
+					<div class="form-group">
+				    	<label for="YearsExperience">Years Experience:</label>
+				    	<input type="number" class="form-control" id="YearsExperience" name="YearsExperience" value="#qryDetails.YearsExperience#" />
+				  	</div>
+				</div>
+			</div>
+
+		  	<button type="submit" class="btn btn-default">Save</button>
 		</form>
 
 	</cf_HeaderAndFooter>
