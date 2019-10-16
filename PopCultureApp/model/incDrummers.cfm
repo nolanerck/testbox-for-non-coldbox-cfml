@@ -35,9 +35,9 @@
 	<cfset var qryDrummerDetails = "" />
 
 	<!--- default any negative entries for experience to 0 --->
-<!---	<cfif arguments.yearsExp lt 0>
+	<cfif arguments.yearsExp lt 0>
 		<cfset arguments.yearsExp = 0 />
-	</cfif> --->
+	</cfif>
 
 	<cfquery name="qrySaveDrummer" datasource="#application.dsn#">
 		UPDATE tblDrummers

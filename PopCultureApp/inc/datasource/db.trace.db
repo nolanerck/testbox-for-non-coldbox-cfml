@@ -2,3 +2,27 @@
 org.h2.jdbc.JdbcSQLException: Table "TBLMOVIES" not found; SQL statement:
 SELECT *
 		FROM tblMovies [42102-172]
+10-16 13:32:52 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TBLMUSICGROUPS" not found; SQL statement:
+SELECT *
+		FROM tblMusicGroups
+		WHERE Genre = 'New Wave'
+		ORDER BY BandName [42102-172]
+10-16 13:34:38 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TBLMUSICGROUPS" not found; SQL statement:
+SELECT *
+		FROM tblMusicGroups
+		WHERE Genre = 'New Wave'
+		ORDER BY BandName [42102-172]
+10-16 13:38:26 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TBLMUSICGROUPS" not found; SQL statement:
+SELECT *
+		FROM tblMusicGroups
+		WHERE Genre = 'New Wave'
+		ORDER BY BandName [42102-172]
+10-16 13:38:47 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TBLMUSICGROUPS" not found; SQL statement:
+SELECT *
+		FROM tblMusicGroups
+		WHERE Genre = 'New Wave'
+		ORDER BY BandName [42102-172]

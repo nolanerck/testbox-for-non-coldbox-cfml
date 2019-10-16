@@ -1,6 +1,6 @@
 component
 {
-//	include "./inc/datasourceconfig.cfm";
+	include "./inc/datasourceconfig.cfm";
 /*	this.datasources["myTestDSN2"]={
     	  		class: 'org.h2.Driver'
                 ,bundleName:"org.h2"
