@@ -10,6 +10,7 @@ component displayName="My First Test - BDD style" extends="testbox.system.BaseSp
                 favoriteColor = "green";
             });
 
+
             WriteOutput( "NREDEBUG testing..." );
         });
     }

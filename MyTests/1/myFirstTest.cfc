@@ -2,18 +2,26 @@ component displayName="My First Test - xUnit style" extends="testbox.system.Base
 {
 	function setup( currentMethod ) 
 	{
+		Writeoutput( "<p>Setting up for the tests.</p>" );
 		variables.favoriteColor = "green";
 	}
 
     function testSomething() 
     {
-    	Writeoutput( "testing things..." );
+    	Writeoutput( "<p>testing things...</p>" );
         var something = true;
-        $assert.isTrue(something);
+        $assert.isTrue( something );
+        $assert.isTrue( ( variables.favoriteColor eq "green" ) );
+	}
+	
+    function testSomethingElse() 
+    {
+    	Writeoutput( "<p>testing other things...</p>" );
+        $assert.isTrue( ( variables.favoriteColor eq "blue" ) );
     }
 
 	function teardown( currentMethod ) 
 	{
-		WriteOutput( "after after!" );
+		WriteOutput( "<p>after the tests!</p>" );
 	}
 }
