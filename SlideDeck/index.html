@@ -52,7 +52,7 @@
 							</ul>
 						</li>
 
-						<li>ColdFusion, C++, Java, jQuery, PHP, .NET, HTML5, Angular, SQL, etc...</li>
+						<li>ColdFusion, C++, Java, SQL, HTML/CSS, Angular, Vue, React, PHP, etc...</li>
 						<li>Manager of SacInteractive User Group</li>
 						<li>Reformed Video Game Developer (Grim Fandango, SimPark, StarWars Rogue Squadron, etc).</li>
 						<li>Music Junkie</li>
@@ -68,7 +68,6 @@
 				<section>
 					<h2>Slide deck and code samples are here:</h2>
 					<p>github.com/nolanerck<br />testbox-for-non-coldbox-cfml</p>
-					<p>(Maybe Lucee 5 only, due to H2 database.)</p>
 				</section>
 
 				<section>
@@ -95,7 +94,7 @@
 				</section>
 
 				<section>
-					<h2>What/Where Do We Start Testing?</h2>
+					<h2>What / Where Do We Start Testing?</h2>
 					<ul>
 						<li>Many different types of testing, many layers.</li>
 						<li>UI / UX?</li>
@@ -111,15 +110,18 @@
 					<ul>
 						<li><em>"Testing is the QA department's job."</em></li>
 						<li>That's no reason to write broken code.</li>
-						<li>Don't we <em>all</em> benefit from more types of testing?</li>
-						<li>Human QA is beneficial, no matter how many automated tests we have.</li>
+						<li>We <em>all</em> benefit from more types of testing!</li>
+						<li>Human QA is beneficial, no matter how many automated tests we have.
+							<br>
+							Accessibility cannot be 100% tested via automation.
+						</li>
 					</ul>
 				</section>
 
 				<section>
 					<h2>Testing and Misconceptions</h2>
 					<ul>
-						<li>"Writing tests slows us down, it takes too long."</li>
+						<li>"Writing tests slows us down, takes too long."</li>
 						<li>Maybe at first, or later in a project's lifecycle.</li>
 						<li>It's a new discipline, takes time to learn.</li>
 						<li>But does help everyone.</li>
@@ -143,7 +145,7 @@
 						<li>CFML testing framework for automating testing</li>
 						<li>Supports BDD and xUnit style testing</li>
 						<li>Free and open source</li>
-						<li>Works on both Lucee and ACF</li>
+						<li>Works on both ACF and Lucee</li>
 					</ul>
 				</section>
 
@@ -151,9 +153,9 @@
 					<h2>TestBox Misconceptions</h2>
 					<ul>
 						<li>"It's a testing <em>framework</em>, so I have to rewrite my entire app."</li>
-						<li>Nope! Leave your app's code as-is<sup>*</sup>.</li>
+						<li>Nope! Leave your code as-is<sup>*</sup>.</li>
 						<li>Testing frameworks != MVC frameworks</li>
-						<li>TestBox lives in it's own folders, separate from your app.</li>
+						<li>TestBox lives in its own folders, separate from your app</li>
 					</ul>
 					<p><sup>*</sup>Your mileage may vary.</p>
 				</section>
@@ -161,17 +163,17 @@
 				<section>
 					<h2>TestBox Misconceptions</h2>
 					<ul>
-						<li>"It's a 'Box' thing? So it requires ColdBox, right?"</li>
+						<li>"It's a 'Box' thing, therefore it requires ColdBox"</li>
 						<li>Nope again!</li>
-						<li>TestBox is a self-contained project,<br />totally separate from ColdBox.</li>
-						<li>(Though it does come with ColdBox if you're using that.)</li>
+						<li>TestBox is a self-contained project,<br />totally separate from ColdBox</li>
+						<li>(Though it does come with ColdBox if you're using that)</li>
 					</ul>
 				</section>
 
 				<section>
 					<h2>TestBox Misconceptions</h2>
 					<ul>
-						<li>"I bet this is super hard to install and configure."</li>
+						<li>"I bet this is super hard to install and configure"</li>
 						<li>Nope again again!</li>
 						<li>Install CommandBox</li>
 						<li>Type "box install testbox"</li>
@@ -184,9 +186,9 @@
 					<ul>
 						<li>"My app is older. We're not using OOP. This won't work for me."</li>
 						<li>Nope x 3!</li>
-						<li>The more modular / encapsulated your code is, the better.</li>
+						<li>The more modular / encapsulated your code is, the better</li>
 						<li>But doesn't have to use OOP</li>
-						<li>Today's demo uses no CFCs at all, no frameworks either.</li>
+						<li>Today's demo uses no CFCs at all, no frameworks either</li>
 					</ul>
 				</section>
 
@@ -200,12 +202,71 @@
 				</section>
 
 				<section>
+					<h2>Let's get started...</h2>
+				</section>
+
+				<section>
+					<h2>First things first...</h2>
+				</section>
+
+				<section>
+					<h2>Install CommandBox!</h2>
+				</section>
+
+				<section>
+					<h2>CommandBox</h2>
+					<ul>
+						<li>Useful for <em>all</em> CFML projects</li>
+						<li>Both old and new apps benefit</li>
+						<li>Legacy, OOP, and in between</li>
+						<li>The "Node.js" for CFML</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Installing TestBox</h2>
+					<ul>
+						<li>"box install testbox"</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>TestBox in the box.json file</h2>
+					<img src="./images/box-json-file.png" alt="box.json example file">
+				</section>
+
+				<section>
 					<h2>So How Do You Write A Test?!</h2>
 					<ul>
 						<li>Well, what does your app <em>do</em>?!</li>
 						<li>These are "Unit Tests"</li>
 						<li>We're testing the individual units of business logic.</li>
 					</ul>
+				</section>
+
+				<section>
+					<h2>How Do I Run The Tests?</h2>
+					<ul>
+						<li>Default way:<br>
+							http://sitename/testbox/tests/runner.cfm
+						</li>
+						<li>Tests live in /testbox/tests folder</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Runner.cfm</h2>
+					<img src="./images/runner-cfm-file.png" alt="Runner.cfm example">
+				</section>
+
+				<section>
+					<h2>Sample Test File</h2>
+					<img src="./images/first-unit-test.png" alt="Sample Testbox test">
+				</section>
+
+				<section>
+					<h2>Sample Test File Results</h2>
+					<img src="./images/first-unit-test-results.png" alt="Testbox results screenshot">
 				</section>
 
 				<section>
@@ -220,16 +281,32 @@
 				</section>
 
 				<section>
+					<h2>Things to Keep In Mind</h2>
+					<ul>
+						<li>Legacy apps <em>can</em> be tested.<br>
+							But the better your app is structured, the easier it is to test.</li>
+						<li>TestBox 2.x supports older versions of CF than 3.x</li>
+					</ul>
+				</section>
+
+				<section>
 					<h2>Other Resources</h2>
 					<ul>
-						<li>TestBox Book & Ortus Website</li>
-						<li>"Automate Thyself", Luis Majano's CF.Objective preso</li>
-						<li>OrtusSolusions Slack, Google Groups, Into The Box</li>
+						<li>testbox.ortusbooks.com</li>
+						<li>Ortus Website</li>
+						<li>OrtusSolusions Slack, Google Groups, this conference</li>
 						<li>South of Shasta Consulting</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Other Resources (cont)</h2>
+					<ul>
 						<li>ValidateThis</li>
+						<li>"Automate Thyself", Luis Majano's CF.Objective preso</li>
 						<li>"Writing My First Unit Tests With MXUnit And ColdFusion" - Ben Nadel</li>
 						<li>Jenkins</li>
-						<li>Selenium</li>
+						<li>Cypress.io (the new Selenium)</li>
 					</ul>
 				</section>
 
