@@ -279,24 +279,67 @@
 						<li>Also:<br>
 							http://sitename/.../runner.cfm?reporter=json<br>
 							http://sitename/.../runner.cfm??directory=/MyTests/1/<br>
+							http://sitename/.../runner.cfm??directory=/MyTests/
 						</li>
 					</ul>
 				</section>
 
 				<section>
-					<h2>Demo time</h2>
+					<h2>Our Demo App</h2>
 				</section>
 
 				<section>
-					<h2>VS Code Extention</h2>
+					<h2>Our Tests</h2>
+				</section>
+
+				<section>
+					<h2>MockBox</h2>
 					<ul>
-						<li>vscode-testbox</li>
+						<li>Comes with TestBox automatically</li>
+						<li>No extra installation required</li>
+						<li>Mocking = making fake versions of real CFCs</li>
+						<li>MovieService.cfc</li>
+						<li>Test 5-Mock</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>xUnit Style Testing</h2>
+					<img src="./images/xunit-test-xample.png" alt="xUnit test example">
+				</section>
+
+				<section>
+					<h2>Behavior Driven Development</h2>
+					<ul>
+						<li>BDD</li>
+						<li>The "story" like syntax</li>
+						<li>The describe() and it() stuff</li>
+						<li>Does the same thing as xUnit</li>
+						<li>Different verbiage</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>BDD Test Example</h2>
+					<img src="./images/bdd-test-example.png" alt="BDD text example">
+				</section>
+
+				<section>
+					<h2>So which is better?</h2>
+					<ul>
+						<li>xUnit - more procedural looking syntax</li>
+						<li>BDD - more functional syntax</li>
+						<li>BDD uses closure support
+							<br>If 1 test throws an exception, it doesn't kill the entire test suite
+						</li>
 					</ul>
 				</section>
 
 				<section>
 					<h2>Things to Keep In Mind</h2>
 					<ul>
+						<li>You don't have to test <em>everything</em> at once.</li>
+						<li>Add tests when you add new features so it's not overwhelming.</li>
 						<li>Legacy apps <em>can</em> be tested.<br>
 							But the better your app is structured, the easier it is to test.</li>
 						<li>TestBox 2.x supports older versions of CF than 3.x</li>
@@ -317,6 +360,7 @@
 				<section>
 					<h2>Other Resources (cont)</h2>
 					<ul>
+						<li>VS Code Extention - vscode-testbox</li>
 						<li>ValidateThis</li>
 						<li>"Automate Thyself", Luis Majano's CF.Objective preso</li>
 						<li>"Writing My First Unit Tests With MXUnit And ColdFusion" - Ben Nadel</li>
