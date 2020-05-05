@@ -1,0 +1,13 @@
+tests should be DUMB
+void things like for() loops, recurion, manipulating data struucutres, etc.
+
+Even if you have several similar tests
+Tempting to write function calls, etc,
+
+Just copy/paste the chunks of tests that are similar
+More self documenting
+Easier for new dev's to read as a "story" of what's happening
+
+And if the copoy/paste parts are wrong, the test will fail
+so it's a non-issue
+
