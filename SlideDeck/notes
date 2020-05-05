@@ -11,3 +11,7 @@ Easier for new dev's to read as a "story" of what's happening
 And if the copoy/paste parts are wrong, the test will fail
 so it's a non-issue
 
+
+exmaple URL for runnign 1 test?
+http://url/to/testbox/tests/foo.cfc?method=runremote
+
