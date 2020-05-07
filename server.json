@@ -1,5 +1,5 @@
 {
     "app":{
-        "cfengine":"lucee@5"
+        "cfengine":"lucee@5.3.5+92"
     }
 }
