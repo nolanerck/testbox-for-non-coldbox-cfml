@@ -38,7 +38,7 @@
 			<div class="slides">
 
 				<section>
-					<h2>Testing My Non-ColdBox Site With TestBox</h2>
+					<h2>Testing My Non-ColdBox Site<br>With TestBox</h2>
 					<p>Nolan Erck</p>
 					<p>South of Shasta Consulting</p>
 				</section>
@@ -98,10 +98,37 @@
 					<ul>
 						<li>Many different types of testing, many layers.</li>
 						<li>UI / UX?</li>
-						<li>Form submissions? With and without client-side validation turned on?</li>
+						<li>Form submissions?</li>
+						<li>With and without client-side validation turned on?</li>
 						<li>Database queries?</li>
 						<li>Other business logic?</li>
 						<li>So many things!!!</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Different Types of Testing</h2>
+					<ul>
+						<li>Unit</li>
+						<li>UI/UX</li>
+						<li>Integration</li>
+						<li>Regression</li>
+						<li>BDD</li>
+					</ul>
+				</section>
+
+				<section><h2>So what do we start testing first?!</h2></section>
+
+				<section>
+					<h2>Just Start</h2>
+					<ul>
+						<li>Pick something, anything.</li>
+						<li>A page</li>
+						<li>Or a query</li>
+						<li>Or a custom tag</li>
+						<li>Or a function</li>
+						<li>Or a [annoying thing in my app]</li>
+						<li>...just start</li>
 					</ul>
 				</section>
 
@@ -131,13 +158,8 @@
 				</section>
 
 				<section>
-					<h2>Different Types of Testing</h2>
-					<ul>
-						<li>Unit</li>
-						<li>UI/UX</li>
-						<li>Integration</li>
-						<li>Regression</li>
-					</ul>
+					<h2>What's the difference between<br>junior and senior developers?</h2>
+					<p class="fragment">Senior developers test their code.</p>
 				</section>
 
 				<section>
@@ -307,17 +329,16 @@
 				</section>
 
 				<section>
-					<h2>xUnit Style Testing</h2>
+					<h2>Unit Tests</h2>
 					<img src="./images/xunit-test-xample.png" alt="xUnit test example">
 				</section>
 
 				<section>
-					<h2>Behavior Driven Development</h2>
+					<h2>Behavior Driven Development (BDD)</h2>
 					<ul>
-						<li>BDD</li>
 						<li>The "story" like syntax</li>
 						<li>The describe() and it() stuff</li>
-						<li>Does the same thing as xUnit</li>
+						<li>Does the same thing as Unit Tests</li>
 						<li>Different verbiage</li>
 					</ul>
 				</section>
@@ -353,6 +374,7 @@
 						<li>Legacy apps <em>can</em> be tested.<br>
 							But the better your app is structured, the easier it is to test.</li>
 						<li>TestBox 2.x supports older versions of CF than 3.x</li>
+						<li>Tests don't run in top-down sequence.</li>
 					</ul>
 				</section>
 
