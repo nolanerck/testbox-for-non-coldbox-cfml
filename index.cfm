@@ -21,6 +21,7 @@
 			<li><a href="./MyTests/4/NewWaveBandTests.cfc?method=runremote">4. Form posts</a></li>
 			<li><a href="./MyTests/5-Mocks/tests-with-mockbox.cfc?method=runremote">5. Mocks</a></li>
 			<li><a href="./MyTests/6-customTags/TestHeaderAndFooter.cfc?method=runremote">6. Custom Tags</a></li>
+			<li><a href="./MyTests/ModelMigration/TestIncludeIntoModel.cfc.cfc?method=runremote">7. Components (sort of)</a></li>
 		</ul>
 	</li>
 </ul>
