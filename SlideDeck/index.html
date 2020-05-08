@@ -154,11 +154,11 @@
 					<h2>TestBox Misconceptions</h2>
 					<p><em>"It's a testing framework, so I have to rewrite my entire app."</em></p>
 					<ul>
-						<li>Nope! Leave your code as-is<sup>*</sup>.</li>
+						<li>Nope! Leave your code as-is<sup>*</sup></li>
 						<li>Testing frameworks != MVC frameworks</li>
 						<li>TestBox lives in its own folders, separate from your app</li>
 					</ul>
-					<p><sup>*</sup>Your mileage may vary.</p>
+					<p><sup>*</sup>Your mileage may vary</p>
 				</section>
 
 				<section>
@@ -189,7 +189,7 @@
 						<li>Nope x 3!</li>
 						<li>The more modular / encapsulated your code is, the better</li>
 						<li>But doesn't have to use OOP</li>
-						<li>Today's demo uses no CFCs at all, no frameworks either</li>
+						<li>Several demos today will use no CFCs at all!</li>
 					</ul>
 				</section>
 
@@ -241,7 +241,7 @@
 					<ul>
 						<li>Well, what does your app <em>do</em>?!</li>
 						<li>These are "Unit Tests"</li>
-						<li>We're testing the individual units of business logic.</li>
+						<li>We're testing the individual units of business logic</li>
 					</ul>
 				</section>
 
@@ -251,7 +251,8 @@
 						<li>Default way:<br>
 							http://sitename/testbox/tests/runner.cfm
 						</li>
-						<li>Tests live in /testbox/tests folder</li>
+						<li>Tests live in /testbox/tests folder by default</li>
+						<li>You can pick a different location</li>
 					</ul>
 				</section>
 
@@ -279,8 +280,9 @@
 						<li>http://sitename/.../runner.cfm will always work</li>
 						<li>Also:<br>
 							http://sitename/.../runner.cfm?reporter=json<br>
-							http://sitename/.../runner.cfm??directory=/MyTests/1/<br>
-							http://sitename/.../runner.cfm??directory=/MyTests/
+							http://sitename/.../runner.cfm?directory=/MyTests/1/<br>
+							http://sitename/.../runner.cfm?directory=/MyTests/<br>
+							http://sitename/MyTests/LoginTests.cfc?method=runremote
 						</li>
 					</ul>
 				</section>
@@ -331,9 +333,16 @@
 						<li>xUnit - more procedural looking syntax</li>
 						<li>BDD - more functional syntax</li>
 						<li>BDD uses closure support
-							<br>If 1 test throws an exception, it doesn't kill the entire test suite
+							<ul>
+								<li>If 1 test throws an exception, it doesn't kill the entire test suite</li>
+							</ul>
 						</li>
 					</ul>
+				</section>
+
+				<section>
+					<h2>BDD style is common in other stacks</h2>
+					<img src="images/angular-tests.png" alt="Angular test example" />
 				</section>
 
 				<section>
