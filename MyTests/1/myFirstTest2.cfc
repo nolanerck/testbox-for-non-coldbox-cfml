@@ -6,15 +6,15 @@ component displayName="My First Test - xUnit style" extends="testbox.system.Base
 		variables.favoriteColor = "green";
 	}
 
-    function testSomething() 
+    function testFirstThing() 
     {
     	Writeoutput( "<p>testing things...</p>" );
         var something = true;
         $assert.isTrue( something );
-        $assert.isTrue( ( variables.favoriteColor eq "green" ) );
+		$assert.isTrue( ( variables.favoriteColor eq "green" ) );
 	}
 	
-    function testSomethingElse() 
+    function testSecondThing() 
     {
     	Writeoutput( "<p>testing other things...</p>" );
         $assert.isTrue( ( variables.favoriteColor eq "blue" ) );

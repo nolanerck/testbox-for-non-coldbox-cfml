@@ -1,4 +1,7 @@
 <cfif thisTag.executionMode eq "start">
+
+	<cfset caller.headerTagRendered = true />
+
 	<!DOCTYPE html>
 	<html>
 	<head>

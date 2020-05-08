@@ -10,4 +10,12 @@
 
 	</cffunction>
 
+	<cffunction name="testSiteHeaderFooterCustomTagPassingDataBackToCallingTemplate">
+
+		<cfmodule template="/PopCultureApp/HeaderAndFooter.cfm" />
+
+		<cfset $assert.isTrue(  headerTagRendered eq true ) />
+
+	</cffunction>
+
 </cfcomponent>

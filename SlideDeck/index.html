@@ -114,6 +114,7 @@
 						<li>Integration</li>
 						<li>Regression</li>
 						<li>BDD</li>
+						<li>TDD</li>
 					</ul>
 				</section>
 
@@ -133,7 +134,7 @@
 				</section>
 
 				<section>
-					<h2>Testing and Misconceptions</h2>
+					<h2>Testing Misconceptions</h2>
 					<p><em>"Testing is the QA department's job."</em></p>
 					<ul>
 						<li>That's no reason to write broken code.</li>
@@ -146,14 +147,14 @@
 				</section>
 
 				<section>
-					<h2>Testing and Misconceptions</h2>
+					<h2>Testing Misconceptions</h2>
 					<p><em>"Writing tests slows us down, takes too long."</em></p>
 					<ul>
 						<li>Maybe at first, or later in a project's lifecycle.</li>
-						<li>It's a new discipline, takes time to learn.</li>
-						<li>But does help everyone.</li>
-						<li>Writing tests gets easier (and quicker) the more you do it.</li>
+						<li>It's a new discipline.</li>
+						<li>Gets easier (and quicker) the more you do it.</li>
 						<li>It's easy to start doing TDD.</li>
+						<li>It's reusable!</li>
 					</ul>
 				</section>
 
@@ -169,6 +170,7 @@
 						<li>Supports BDD and xUnit style testing</li>
 						<li>Free and open source</li>
 						<li>Works on both ACF and Lucee</li>
+						<li>(Version 4 just released!)</li>
 					</ul>
 				</section>
 
@@ -176,7 +178,8 @@
 					<h2>TestBox Misconceptions</h2>
 					<p><em>"It's a testing framework, so I have to rewrite my entire app."</em></p>
 					<ul>
-						<li>Nope! Leave your code as-is<sup>*</sup></li>
+						<li>Nope!</li>
+						<li>Leave your code as-is<sup>*</sup></li>
 						<li>Testing frameworks != MVC frameworks</li>
 						<li>TestBox lives in its own folders, separate from your app</li>
 					</ul>
@@ -188,6 +191,7 @@
 					<p><em>"It's a 'Box' thing, therefore it requires ColdBox"</em></p>
 					<ul>
 						<li>Nope again!</li>
+						<li>(Do we still need to say this?)</li>
 						<li>TestBox is a self-contained project,<br />totally separate from ColdBox</li>
 						<li>(Though it does come with ColdBox if you're using that)</li>
 					</ul>
@@ -266,8 +270,8 @@
 					<h2>So How Do You Write A Test?!</h2>
 					<ul>
 						<li>Well, what does your app <em>do</em>?!</li>
-						<li>These are "Unit Tests"</li>
-						<li>We're testing the individual units of business logic</li>
+						<li>Find the units of "stuff" in your code.</li>
+						<li>We're testing the individual units, as much as possible</li>
 					</ul>
 				</section>
 
@@ -317,9 +321,9 @@
 					<h2>Our Demo App</h2>
 				</section>
 
-				<section>
+				<!-- <section>
 					<h2>Our Tests</h2>
-				</section>
+				</section> -->
 
 				<section>
 					<h2>Unit Tests</h2>
@@ -368,6 +372,10 @@
 						<li>MovieService.cfc</li>
 						<li>Test 5-Mock</li>
 					</ul>
+				</section>
+
+				<section>
+					<h2>Let's look at code!</h2>
 				</section>
 
 				<section>
